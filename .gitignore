@@ -1,0 +1,4 @@
+# Exclude these folders
+.vscode/
+data/
+workdir/
