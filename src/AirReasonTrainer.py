@@ -27,12 +27,12 @@ from src.utils.metrics import (
 
 # Experiment configuration
 experiment_name = "supp_test"
-project_name = "final_use_supp"
+project_name = "final_supp"
 root_dir = "./workdir/"
 
 # Initialize Comet ML experiment
 experiment = Experiment(
-    api_key="5MDt5Crj6Oz6n6NSJaEtJgiGW",
+    api_key="",
     project_name=project_name,
 )
 experiment.set_name(experiment_name)
