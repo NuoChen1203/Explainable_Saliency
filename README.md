@@ -25,8 +25,8 @@ Our approach bridges the gap between saliency prediction and interpretability by
 ## ⚙️ **Setup**
 
 ### Prerequisites:
-- Python 3.8+
-- PyTorch 1.9.0+
+- Python 3.8
+- PyTorch 1.9.1
 - Install dependencies:
   ```bash
   pip install -r requirements.txt
