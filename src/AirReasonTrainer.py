@@ -143,6 +143,7 @@ def test(model, valloader, iteration, experiment):
     mean_metrics = {k: np.mean(v) for k, v in metrics.items() if v}
     for k, v in mean_metrics.items():
         print(f'{k}: {v}')
+    
     experiment.log_metrics(mean_metrics, step=iteration)
     
     return mean_metrics['cc_score']
@@ -166,8 +167,13 @@ def main():
     # Training loop
     print('Start training model')
     iteration, val_acc = 0, 0
+
+    if args.mode != 'train':
+        model.load_state_dict(torch.load(os.path.join(args.checkpoint_dir, 'model_best.pth')))
+        test(model, valloader, iteration, experiment)
+        return
     
-    for epoch in range(min(args.epoch, 7)):
+    for epoch in range(args.epoch):
         # Adjust learning rate
         if epoch == 0:
             adjust_learning_rate(optimizer, 1)
