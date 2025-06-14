@@ -70,14 +70,16 @@ python AirReasonTrainer.py --mode=eval --topk=3 --checkpoint_dir=./workdir/your_
 ```
 
 ---
-<!-- 
+
 ## ✍️ **Citation**
 
-If you use this code, please cite:
+If you find our work helpful in your research, please consider citing it:
 ```bibtex
-@inproceedings{explainable_saliency2025,
-    title={Explainable Saliency: Articulating Reasoning with Contextual Prioritization},
-    author={Anonymous},
-    booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2025}
-} -->
+@InProceedings{Chen_2025_CVPR,
+    author    = {Chen, Nuo and Jiang, Ming and Zhao, Qi},
+    title     = {Explainable Saliency: Articulating Reasoning with Contextual Prioritization},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {9601-9610}
+}
